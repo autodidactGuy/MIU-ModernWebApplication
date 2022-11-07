@@ -35,7 +35,7 @@ module.exports.insertOne=function(req,res){
     console.log("POST One Received");
     let {title,price,minPlayers,minAge}=req.body;
     if(title && price && minPlayers && minAge){
-        price=parseInt(price);
+        price=parseFloat(price);
         minPlayers=parseInt(minPlayers);
         minAge=parseInt(minAge);
         if(minPlayers<1 || minPlayers>11){
