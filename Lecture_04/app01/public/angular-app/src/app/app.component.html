@@ -1,0 +1,34 @@
+This is {{title}}<br>
+<ul>
+  <li *ngFor="let name of people">{{name}}</li>
+</ul>
+
+<button (click)="onBtnClick()">Click</button>
+
+<select>
+  <option *ngFor="let student of students">{{student.name}}</option>
+</select>
+
+<br>
+<br>
+
+{{123 | currency:"Rs."}}
+
+<br>
+
+{{today | date:"MMM-dd-YY hh:mm:ss a"}}
+
+<br>
+
+<ul>
+  <li *ngFor="let student of students">{{student | json}}</li>
+</ul>
+
+<br>
+
+{{"Maharishi International University" | lowercase}}
+
+<br>
+
+{{123.456789 | number:"1.2"}}
+
